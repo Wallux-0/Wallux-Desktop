@@ -25,11 +25,13 @@ or right-click on the file -> Permissions tab -> Select the "Run as executable" 
 
 ### How to contribute
 
-Read <a href="https://github.com/Wallux-0/Wallux#readme">this</a> to know more about contribution.
+Create an issue <a href="https://github.com/Wallux-0/Wallux-Desktop/issues">here</a> and attach an high-res version of the wallpaper you wish to contribute and name the issue as **Wallpaper Request**.
+
+You can optionally provide Name, Tags and Description. Please try to provide the source of the wallpaper too.
 
 ### Problems?
 
-If you have any issues, open an issue <a href="https://github.com/Wallux-0/Wallux-Desktop/issues">here</a>.
+If you have any issues, open an issue as **Problem** <a href="https://github.com/Wallux-0/Wallux-Desktop/issues">here</a>.
 
 ### Disclaimer
 
