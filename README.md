@@ -20,6 +20,10 @@ A collection of beautiful wallpapers. That's it. As simple as that!
 
 * Just download the file for your OS(Windows/Linux) from above and double click it :)
 
+### Additional Options
+
+* Use ```--no-kiosk``` argument while running the app to open in browser window instead of fullscreen kiosk.
+
 ### How to contribute wallpaper's
 
 Create an issue <a href="https://github.com/Wallux-0/Wallux-Desktop/issues">here</a> and attach an high-res version of the wallpaper you wish to contribute and name the issue as **Wallpaper Request**.
