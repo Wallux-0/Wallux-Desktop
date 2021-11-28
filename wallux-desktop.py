@@ -116,16 +116,30 @@ def closed():
     sys.exit()
 
 if os.name=="nt":
-    x=os.system("start firefox -kiosk -private-window http://127.0.0.1:60001")
-    if x==1:
-        x=os.system("start chrome -kiosk -private-window http://127.0.0.1:60001")
-    if x==1:
-        x=os.system("start msedge -kiosk -private-window http://127.0.0.1:60001")
+    if '--no-kiosk' not in sys.argv:
+        x=os.system("start firefox -kiosk -private-window http://127.0.0.1:60001")
+        if x==1:
+            x=os.system("start chrome -kiosk -private-window http://127.0.0.1:60001")
+        if x==1:
+            x=os.system("start msedge -kiosk -private-window http://127.0.0.1:60001")
+    else:
+        x=os.system("start firefox -private-window http://127.0.0.1:60001")
+        if x==1:
+            x=os.system("start chrome -private-window http://127.0.0.1:60001")
+        if x==1:
+            x=os.system("start msedge -private-window http://127.0.0.1:60001")
     eel.start('index.html', mode=None, port=60001)
 else:
-    x=os.system("google-chrome-stable -kiosk -private-window http://127.0.0.1:60001 &")
-    if x==1:
-        x=os.system("firefox -kiosk -private-window http://127.0.0.1:60001 &")
-    if x==1:
-        x=os.system("msedge -kiosk -private-window http://127.0.0.1:60001 &")
+    if '--no-kiosk' not in sys.argv:
+        x=os.system("google-chrome-stable -kiosk -private-window http://127.0.0.1:60001 &")
+        if x==1:
+            x=os.system("firefox -kiosk -private-window http://127.0.0.1:60001 &")
+        if x==1:
+            x=os.system("msedge -kiosk -private-window http://127.0.0.1:60001 &")
+    else:
+        x=os.system("google-chrome-stable -private-window http://127.0.0.1:60001 &")
+        if x==1:
+            x=os.system("firefox -private-window http://127.0.0.1:60001 &")
+        if x==1:
+            x=os.system("msedge -private-window http://127.0.0.1:60001 &")
     eel.start('index.html', mode=None, port=60001)

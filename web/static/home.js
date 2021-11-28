@@ -9,6 +9,8 @@ function onScrollFunction() {
     elem.style.top = window.scrollY + 140;
     elem = document.getElementById('downloadingwallpaper');
     elem.style.top = window.scrollY + 140;
+    elem = document.getElementById('noInternet');
+    elem.style.top = window.scrollY + 140;
 }
 
 window.addEventListener('scroll', function(event) { onScrollFunction() });
@@ -104,6 +106,10 @@ function workwithdata(data) {
     tagContainer.innerHTML = tags;
     theWallpaperDict = final_array;
 };
+
+window.addEventListener('offline', ()=>document.getElementById('noInternet').style.display='block')
+if (window.navigator.onLine===false) {document.getElementById('noInternet').style.display='block'}
+window.addEventListener('online', ()=>document.getElementById('noInternet').style.display='none')
 
 $.ajax({
     url: "https://raw.githubusercontent.com/Wallux-0/Wallux/main/static/tags.json",
