@@ -13,17 +13,14 @@ A collection of beautiful wallpapers. That's it. As simple as that!
 
 ### How to download Wallux-Desktop
 
-* Download the Desktop App (linux only) from <a href="https://github.com/Wallux-0/Wallux-Desktop/releases/download/beta/wallux">here</a>.
+* Download the Desktop App for Linux from <a href="https://github.com/Wallux-0/Wallux-Desktop/releases/download/release/wallux-desktop">here</a>.
+* Download the Desktop App for Windows from <a href="https://github.com/Wallux-0/Wallux-Desktop/releases/download/release/wallux-desktop.exe">here</a>.
 
 ### How to run Wallux
 
-* After downloading the file from the link above, make it executable by 
-```bash
-chmod +x wallux
-``` 
-or right-click on the file -> Permissions tab -> Select the "Run as executable" checkbox. You can now open it like any other app.
+* Just download the file for your OS(Windows/Linux) from above and double click it :)
 
-### How to contribute
+### How to contribute wallpaper's
 
 Create an issue <a href="https://github.com/Wallux-0/Wallux-Desktop/issues">here</a> and attach an high-res version of the wallpaper you wish to contribute and name the issue as **Wallpaper Request**.
 
